@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/DiazDeCerio/src-gen" creationIcons="false" editDirectory="/DiazDeCerio.edit/src-gen"
+    editorDirectory="/DiazDeCerio.editor/src-gen" modelPluginID="DiazDeCerio" modelName="DiazDeCerio"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" codeFormatting="true"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>diazDeCerio.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="DiazDeCerio" disposableProviderFactory="true" ecorePackage="diazDeCerio.ecore#/">
+    <genClasses ecoreClass="diazDeCerio.ecore#//PolygonList">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference diazDeCerio.ecore#//PolygonList/polygons"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference diazDeCerio.ecore#//PolygonList/segments"/>
+    </genClasses>
+    <genClasses ecoreClass="diazDeCerio.ecore#//Polygon">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diazDeCerio.ecore#//Polygon/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference diazDeCerio.ecore#//Polygon/segments"/>
+    </genClasses>
+    <genClasses ecoreClass="diazDeCerio.ecore#//Segment">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diazDeCerio.ecore#//Segment/x1"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diazDeCerio.ecore#//Segment/y1"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diazDeCerio.ecore#//Segment/x2"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diazDeCerio.ecore#//Segment/y2"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference diazDeCerio.ecore#//Segment/polygon"/>
+    </genClasses>
+    <genClasses ecoreClass="diazDeCerio.ecore#//Triangle">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diazDeCerio.ecore#//Triangle/base"/>
+    </genClasses>
+    <genClasses ecoreClass="diazDeCerio.ecore#//Quadrilateral"/>
+    <genClasses ecoreClass="diazDeCerio.ecore#//Other"/>
+  </genPackages>
+</genmodel:GenModel>

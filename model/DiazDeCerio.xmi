@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diazDeCerio:PolygonList
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:diazDeCerio="http://www.example.org/diazDeCerio"
+    xsi:schemaLocation="http://www.example.org/diazDeCerio diazDeCerio.ecore">
+  <polygons
+      xsi:type="diazDeCerio:Triangle"
+      name="B1"
+      segments="//@segments.0 //@segments.1 //@segments.2"/>
+  <polygons
+      xsi:type="diazDeCerio:Triangle"
+      name="B2"
+      segments="//@segments.3 //@segments.4 //@segments.5"/>
+  <polygons
+      xsi:type="diazDeCerio:Quadrilateral"
+      name="B3"
+      segments="//@segments.6 //@segments.7 //@segments.8 //@segments.9"/>
+  <segments
+      y1="3"
+      y2="4"
+      polygon="//@polygons.0"/>
+  <segments
+      x1="3"
+      x2="4"
+      y2="4"
+      polygon="//@polygons.0"/>
+  <segments
+      x2="4"
+      polygon="//@polygons.0"/>
+  <segments
+      y1="4"
+      polygon="//@polygons.1"/>
+  <segments
+      x1="4"
+      y1="4"
+      y2="3"
+      polygon="//@polygons.1"/>
+  <segments
+      x1="4"
+      x2="3"
+      polygon="//@polygons.1"/>
+  <segments
+      x1="3"
+      y1="4"
+      x2="4"
+      y2="3"
+      polygon="//@polygons.2"/>
+  <segments
+      x1="4"
+      y1="5"
+      x2="3"
+      y2="4"
+      polygon="//@polygons.2"/>
+  <segments
+      x1="5"
+      y1="4"
+      x2="4"
+      y2="5"
+      polygon="//@polygons.2"/>
+  <segments
+      x1="4"
+      y1="3"
+      x2="5"
+      y2="4"
+      polygon="//@polygons.2"/>
+</diazDeCerio:PolygonList>
